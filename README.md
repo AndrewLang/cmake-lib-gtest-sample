@@ -8,6 +8,7 @@ This project is built on Windows with Visual Studio, but it should support other
 ## Directory structure
 The directory structure is a classic app folder structure, reusable codde is in a shared library, main app reference the shared library, unit tests are created for the shared library code.
 
+```
 cmake-lib-gtest-sample
 	- .gitignore				// git ignore file
 	- CMakeLists.txt			// root CMakeLists file
@@ -36,7 +37,7 @@ cmake-lib-gtest-sample
 			- main.h
 			- main.cpp			// main file to start the unit tests
 			- tests.cpp			// cpp file has unit tests
-
+```
 
 ## Shared library
 Shared library is compiled to dll which can be reused in the solution or by other apps, a simple logger is defined in this library, demo app uses this logger output messages to console window.
@@ -85,7 +86,7 @@ ExternalProject_Add(googletest
   TEST_COMMAND      ""
 )
 
-onfigure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
+configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
 
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
   RESULT_VARIABLE result
