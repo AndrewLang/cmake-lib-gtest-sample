@@ -14,3 +14,9 @@ TEST(TestSamples, VerifyGtestTrue){
 TEST(LoggerTests, Constructor){
 	Logger logger("test");
 }
+
+TEST(LoggerTests, Debug) {
+	Logger logger("test");
+	logger.debug("test message");
+
+}

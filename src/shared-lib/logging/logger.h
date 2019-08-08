@@ -4,7 +4,7 @@
 
 namespace SharedLib
 {
-	class EXPORT_SYMBOL Logger
+	class EXPORT Logger
 	{
 	public:
 		Logger(std::string loggerName);

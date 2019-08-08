@@ -9,7 +9,7 @@
 
 
 #ifdef EXPMODULE
-#define EXPORT_SYMBOL __declspec(dllexport)
+#define EXPORT __declspec(dllexport)
 #else
-#define EXPORT_SYMBOL __declspec(dllimport)
+#define EXPORT __declspec(dllimport)
 #endif

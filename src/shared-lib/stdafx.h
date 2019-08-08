@@ -46,14 +46,16 @@
 #endif
 
 
-#if defined(PXIRESOURCEMANAGERCOMMON_EXPORTS)
-#define DECLSPEC EXPORT
-#define LINUX_C_DECLSPEC LINUX_C_EXPORT
-#define WIN_C_DECLSPEC WIN_C_EXPORT
-#else
-#define DECLSPEC
-#define WIN_C_DECLSPEC
-#define LINUX_C_DECLSPEC
-#endif
-
 // reference additional headers your program requires here
+
+#include <stdio.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <set>
+#include <map>
+#include <list>
+#include <deque>
+#include <memory>
