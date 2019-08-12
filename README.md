@@ -13,9 +13,9 @@ cmake-lib-gtest-sample
 	- .gitignore				// git ignore file
 	- CMakeLists.txt			// root CMakeLists file
 	- README.md
-	- src						// source code folder
+	- src					// source code folder
 		- CMakeLists.txt		// CMakeLists file for source code
-		- demo					// demo app, main application folder
+		- demo				// demo app, main application folder
 			- CMakeLists.txt	// CMakeLists file for demo app
 			- main.h
 			- main.cpp
@@ -24,10 +24,10 @@ cmake-lib-gtest-sample
 			- targetver.h
 			- stdafx.h
 			- stdafx.cpp
-			- logging			// logging folder
+			- logging		// logging folder
 				- logger.h
 				- logger.cpp 
-	- tests						// unit tests
+	- tests					// unit tests
 		- CMakeLists.txt		// CMakeLists file for unit tests
 		- CMakeLists.txt.in		// 
 		- shared-lib-tests
@@ -35,8 +35,8 @@ cmake-lib-gtest-sample
 			- pch.h
 			- pch.cpp
 			- main.h
-			- main.cpp			// main file to start the unit tests
-			- tests.cpp			// cpp file has unit tests
+			- main.cpp		// main file to start the unit tests
+			- tests.cpp		// cpp file has unit tests
 ```
 
 ## Shared library
