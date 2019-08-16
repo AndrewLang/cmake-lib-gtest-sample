@@ -2,7 +2,7 @@
 #include "../stdafx.h"
 #include <string>
 
-namespace SharedLib
+namespace Matrix
 {
 	class EXPORT Logger
 	{

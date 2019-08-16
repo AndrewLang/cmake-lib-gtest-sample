@@ -1,9 +1,9 @@
-#include "../stdafx.h"
+#include "stdafx.h"
 
-#include "logger.h"
+#include "logging/logger.h"
 #include <iostream>
 
-namespace SharedLib
+namespace Matrix
 {
 	Logger::Logger(std::string loggerName)
 		: mName(loggerName)

@@ -1,8 +1,8 @@
 #include "gtest/gtest.h"
-#include "logger.h"
+#include "logging/logger.h"
 
 using namespace std;
-using namespace SharedLib;
+using namespace Matrix;
 
 TEST(TestSamples, VerifyGtest) {
 	EXPECT_EQ(1, 1);

@@ -1,18 +1,25 @@
-﻿
+﻿include_directories(${CMAKE_SOURCE_DIR}/src/matrix-ioc/include)
 
-project(shared-lib)
+project(matrix-ioc)
+
 
 set (HeaderFiles 
-	targetver.h
-	stdafx.h
+	include/targetver.h
+	include/stdafx.h
 
-	logging/logger.h
+	include/logging/logger.h
+
+	include/common/TextFormatter.h
+	include/common/StringExtensions.h
 )
 
 set (SourceFiles 
-	stdafx.cpp
+	src/stdafx.cpp
 
-	logging/logger.cpp
+	src/logging/logger.cpp
+
+	src/common/TextFormatter.cpp
+	src/common/StringExtensions.cpp
 )
 
 add_library( ${PROJECT_NAME} SHARED ${HeaderFiles} ${SourceFiles} )

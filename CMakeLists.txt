@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.12)
 
-project ("cmake-lib-gtest-solution")
+project ("cmake-ioc-lib")
 
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
@@ -11,6 +11,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
 enable_testing()
 
 set(CMAKE_CXX_STANDARD 14)	

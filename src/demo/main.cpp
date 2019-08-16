@@ -1,9 +1,9 @@
 
 #include "main.h"
-#include "logger.h"
+#include "logging/logger.h"
 
 using namespace std;
-using namespace SharedLib;
+using namespace Matrix;
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 
 	Logger logger("main");
 
-	logger.debug("log messages");
+	logger.debug("log messages").debug("debug messages");
 
 	getchar();
 

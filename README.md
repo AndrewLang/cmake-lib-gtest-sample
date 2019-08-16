@@ -19,7 +19,7 @@ cmake-lib-gtest-sample
 			- CMakeLists.txt	// CMakeLists file for demo app
 			- main.h
 			- main.cpp
-		- shared-lib			// shared library folder
+		- matrix-ioc			// shared library folder
 			- CMakeLists.txt	// CMakeLists file for shared library
 			- targetver.h
 			- stdafx.h
@@ -30,7 +30,7 @@ cmake-lib-gtest-sample
 	- tests					// unit tests
 		- CMakeLists.txt		// CMakeLists file for unit tests
 		- CMakeLists.txt.in		// 
-		- shared-lib-tests
+		- matrix-ioc-tests
 			- CMakeLists.txt
 			- pch.h
 			- pch.cpp
@@ -61,7 +61,7 @@ CMake configuration
 add_executable(${PROJECT_NAME} main.cpp main.h)
 
 # Link to shared library
-target_link_libraries(${PROJECT_NAME} shared-lib)
+target_link_libraries(${PROJECT_NAME} matrix-ioc)
 ```
 
 ## Unit test

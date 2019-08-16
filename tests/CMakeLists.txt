@@ -35,5 +35,5 @@ add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/googletest-src
 include_directories(${gtest_SOURCE_DIR}/include)
 
 
-add_subdirectory ("shared-lib-tests")
+add_subdirectory ("matrix-ioc-tests")
 

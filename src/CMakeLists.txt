@@ -1,6 +1,6 @@
 
 add_subdirectory (demo)
-add_subdirectory (shared-lib)
+add_subdirectory (matrix-ioc)
 
 
-add_dependencies(demo shared-lib)
+add_dependencies(demo matrix-ioc)
