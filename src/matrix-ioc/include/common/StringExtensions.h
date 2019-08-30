@@ -11,6 +11,8 @@
 #include <functional>
 #include <stdio.h>
 #include <iomanip>
+#include <stdlib.h>
+#include <time.h>
 #include <chrono>
 
 
@@ -173,12 +175,12 @@ namespace Matrix
 		template<typename TReturn>
 		static TReturn convertTo(const std::string & value)
 		{
-			std::istd::stringstream stream(value);
+			std::stringstream stream(value);
 			TReturn target;
 
 			if (typeid(TReturn) == typeid(std::string))
 			{
-				for (int i = 0; i < std::stringExtensions::split(value).size(); i++)
+				for (int i = 0; i < StringExtensions::split(value).size(); i++)
 				{
 					TReturn tempValue;
 					stream >> tempValue;
@@ -253,16 +255,16 @@ namespace Matrix
 
 		static std::string getTimestamp()
 		{
-			time_t rawtime;
-			struct tm timeinfo;
+			time_t rawtime = std::time(0);
+			struct tm* timeinfo = std::localtime(&rawtime);
 
-			time(&rawtime);
-
-			localtime_s(&timeinfo, &rawtime);
+			//time(&rawtime);
+			
+			//localtime_s(&timeinfo, &rawtime);
 
 			// Must be static, otherwise won't work
 			static char result[20];
-			strftime(result, sizeof(result), "%Y-%m-%d %H:%M:%S", &timeinfo);
+			strftime(result, sizeof(result), "%Y-%m-%d %H:%M:%S", timeinfo);
 
 			return result;
 		}

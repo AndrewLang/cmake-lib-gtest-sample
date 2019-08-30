@@ -1,5 +1,7 @@
 #include "../stdafx.h"
 #include <string>
+#include <iostream>
+#include <sstream>
 
 namespace Matrix
 {

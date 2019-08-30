@@ -1,5 +1,5 @@
 ﻿
-include_directories(${CMAKE_SOURCE_DIR}/src/matrix-ioc/Include)
+include_directories(${CMAKE_SOURCE_DIR}/src/matrix-ioc/include)
 
 project(matrix-ioc-tests)
 
