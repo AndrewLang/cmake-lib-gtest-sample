@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "logging/logger.h"
+#include "common/StringExtensions.h"
 #include <iostream>
 
 namespace Matrix
@@ -16,7 +17,7 @@ namespace Matrix
 
 	Logger& Logger::debug(std::string message)
 	{
-		std::cout << "[" << mName << "] " << message << std::endl;
+		std::cout << "[" << StringExtensions::getTimestamp() << "] " << "[" << mName << "] " << message << std::endl;
 
 		return *this;
 	}

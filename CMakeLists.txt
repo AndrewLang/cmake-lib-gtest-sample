@@ -14,7 +14,7 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 enable_testing()
 
-set(CMAKE_CXX_STANDARD 14)	
+set(CMAKE_CXX_STANDARD 17)	
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-std=gnu++0x)
